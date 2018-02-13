@@ -1,0 +1,27 @@
+title: Premonition Demo Site
+description: Demo site for Premonition
+baseurl: ""
+url: ""
+
+markdown: redcarpet
+redcarpet:
+  extensions:  ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data", "fenced_code_blocks"]
+
+plugins:
+  - jekyll-feed
+  - premonition
+
+premonition:
+  types:
+    - id: note
+      meta:
+        fa-icon: fa-check-square
+    - id: info
+      meta:
+        fa-icon: fa-info-circle
+    - id: warning
+      meta:
+        fa-icon: fa-exclamation-circle
+    - id: error
+      meta:
+        fa-icon: fa-exclamation-triangle
