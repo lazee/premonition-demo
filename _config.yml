@@ -1,6 +1,6 @@
 title: Premonition Demo Site
 description: Demo site for Premonition
-baseurl: ""
+baseurl: "/premonition-demo/"
 url: ""
 
 markdown: redcarpet
