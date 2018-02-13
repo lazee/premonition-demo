@@ -6,7 +6,7 @@
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    background: #eee;
+    background: #fff;
   }
 
   .c     { color: #998; font-style: italic } // Comment
@@ -28,7 +28,7 @@
   .gp    { color: #555 } // Generic.Prompt
   .gs    { font-weight: bold } // Generic.Strong
   .gu    { color: #aaa } // Generic.Subheading
-  .gt    { color: #aaa } // Generic.Traceback
+  .gt    { color: #888 } // Generic.Traceback
   .kc    { font-weight: bold } // Keyword.Constant
   .kd    { font-weight: bold } // Keyword.Declaration
   .kp    { font-weight: bold } // Keyword.Pseudo

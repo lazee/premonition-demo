@@ -1,3 +1,8 @@
+PATH
+  remote: /Users/jakob/amedia/master/premonition
+  specs:
+    premonition (2.0.0.pre.BETA2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -42,12 +47,10 @@ GEM
     mercenary (0.3.6)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    premonition (2.0.0.pre.BETA1)
     public_suffix (3.0.2)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    redcarpet (3.4.0)
     rouge (3.1.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
@@ -63,8 +66,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.7.2)
   jekyll-feed (~> 0.6)
-  premonition (= 2.0.0.pre.BETA1)
-  redcarpet
+  premonition!
 
 BUNDLED WITH
    1.16.1
