@@ -2,24 +2,12 @@
 layout: default
 ---
 
-[Premonition](https://github.com/amedia/premonition) is a Jekyll plugin that generates a various number of info boxes from plain and simple Markdown block quotes.
+[Premonition](https://github.com/amedia/premonition) is a [Jekyll](https://jekyllrb.com/) plugin
+that can transform [Markdown](https://en.wikipedia.org/wiki/Markdown) [blockquotes](https://daringfireball.net/projects/markdown/syntax#blockquote)
+into styled blocks of code. The default template and stylesheet focuses on creating info
+boxes, but through the templating system you can modify it to suit your needs.
 
-A block quote like this
-
-~~~markdown
- > note "My note"
- > I love `Premonition` so much take a look [here](https://github.com/amedia/premonition)
-~~~
-
-can turn into
-
-> note "My note"
-> I love `Premonition` so much take a look [here](https://github.com/amedia/premonition)
-
-in no time :)
-
-You will find documentation [here](https://github.com/amedia/premonition) and get the
-source code for this demo [here](https://github.com/amedia/premonition-demo).
+Read the [documentation](https://github.com/amedia/premonition) to get started.
 
 ## Examples
 
