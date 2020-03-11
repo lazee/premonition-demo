@@ -1,6 +1,5 @@
 ---
 layout: default
-excerpt_separator: <!--more-->
 ---
 
 [Premonition](https://github.com/lazee/premonition) is a [Jekyll](https://jekyllrb.com/) plugin
@@ -25,8 +24,6 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
 > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
 > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
-
-<!--more-->
 
 ### Note without title
 
@@ -115,13 +112,11 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
 >
 > Anything you can do in Markdown, you can do here. Expect from embeds Premonition boxes ;)
 
-### Posts
+### Post excerpts
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+Premonition also works within excerpts
+
+{% for post in site.posts %}
+  <h2>{{ post.title }}</h2>
+  {{ post.excerpt }}
+{% endfor %}
