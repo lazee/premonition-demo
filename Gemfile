@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 3.7.2'
+gem 'jekyll', '~> 4.0.0'
 group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.6'
-  gem 'premonition', '~> 2.0.0'
+  gem 'jekyll-feed', '~> 0.13.0'
+  gem 'premonition', '4.0.0' , path: "/Users/jakob/Code/premonition"
 end

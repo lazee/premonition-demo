@@ -1,19 +1,20 @@
 ---
 layout: default
+excerpt_separator: <!--more-->
 ---
 
-[Premonition](https://github.com/amedia/premonition) is a [Jekyll](https://jekyllrb.com/) plugin
+[Premonition](https://github.com/lazee/premonition) is a [Jekyll](https://jekyllrb.com/) plugin
 that can transform [Markdown](https://en.wikipedia.org/wiki/Markdown) [blockquotes](https://daringfireball.net/projects/markdown/syntax#blockquote)
 into styled blocks of code. The default template and stylesheet focuses on creating info
 boxes, but through the templating system you can modify it to suit your needs.
 
-Read the [documentation](https://github.com/amedia/premonition) to get started.
+Read the [documentation](https://github.com/lazee/premonition) to get started.
 
 ## Examples
 
 ### Note with title
 
-~~~markdown
+~~~ markdown
  > note "My note"
  > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
  > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
@@ -25,9 +26,11 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
 > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
 
+<!--more-->
+
 ### Note without title
 
-~~~markdown
+~~~ markdown
  > note ""
  > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
  > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
@@ -41,7 +44,7 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 
 ### Info box
 
-~~~markdown
+~~~ markdown
  > info "The information header"
  > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
  > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
@@ -55,7 +58,7 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 
 ### Warning box
 
-~~~markdown
+~~~ markdown
  > warning "The information header"
  > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
  > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
@@ -69,7 +72,7 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 
 ### Error box
 
-~~~markdown
+~~~ markdown
  > error "The information header"
  > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
  > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
@@ -83,9 +86,9 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 
 ### Error box with Markdown
 
-~~~markdown
+~~~ markdown
  > error "The information header"
- > [Premonition](https://github.com/amedia/premonition) allows you to add
+ > [Premonition](https://github.com/lazee/premonition) allows you to add
  >
  > * Lists
  > * like this
@@ -99,7 +102,7 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 ~~~
 
 > error "The information header"
-> [Premonition](https://github.com/amedia/premonition) allows you to add
+> [Premonition](https://github.com/lazee/premonition) allows you to add
 >
 > * Lists
 > * like this
@@ -111,3 +114,14 @@ Read the [documentation](https://github.com/amedia/premonition) to get started.
 >```
 >
 > Anything you can do in Markdown, you can do here. Expect from embeds Premonition boxes ;)
+
+### Posts
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

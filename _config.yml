@@ -1,6 +1,6 @@
 title: Premonition Demo Site
 description: Demo site for Premonition
-baseurl: "/premonition-demo/"
+baseurl: "/premonition-demo"
 url: ""
 
 plugins:
