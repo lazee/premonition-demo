@@ -5,7 +5,8 @@ layout: default
 [Premonition](https://github.com/lazee/premonition) is a [Jekyll](https://jekyllrb.com/) plugin
 that can transform [Markdown](https://en.wikipedia.org/wiki/Markdown) [blockquotes](https://daringfireball.net/projects/markdown/syntax#blockquote)
 into styled blocks of code. The default template and stylesheet focuses on creating info
-boxes, but through the templating system you can modify it to suit your needs.
+boxes, but through the templating system you can modify it to suit your needs.With version 4 we also introduced
+a new citation box.
 
 Read the [documentation](https://github.com/lazee/premonition) to get started.
 
