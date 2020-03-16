@@ -1,64 +1,89 @@
 .premonition {
-    $default-color: #5bc0de;
-    $default-light-color: #e3edf2;
-    $info-color: #50af51;
-    $info-light-color: #f3f8f3;
-    $warning-color: #f0ad4e;
-    $warning-light-color: #fcf8f2;
-    $error-color: #d9534f;
-    $error-light-color: #fdf7f7;
-    $content-color: rgba(0,0,0,0.5);
+  $default-color: #5bc0de;
+  $default-light-color: #e3edf2;
+  $info-color: #50af51;
+  $info-light-color: #f3f8f3;
+  $warning-color: #f0ad4e;
+  $warning-light-color: #fcf8f2;
+  $error-color: #d9534f;
+  $error-light-color: #fdf7f7;
+  $content-color: rgba(0,0,0,0.5);
+  $citation-color: #495057;
+  $citation-light-color: #f8f9fa;
 
-    display: grid;
-    grid-template-columns: 43px auto;
-    padding-top: 13px;
-    padding-bottom: 6px;
-    margin: 30px 0 30px 0;
-    background-color: $default-light-color;
-    border-left: 4px solid $default-color;
+  display: grid;
+  grid-template-columns: 43px auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin: 30px 0 30px 0;
+  background-color: $default-light-color;
+  border-left: 4px solid $default-color;
+  color: $default-color;
+
+  code {
+    background-color: #fff;
     color: $default-color;
-
-    code {
-      background-color: #fff;
-      color: $default-color;
-    }
-
-    .header {
-      font-weight: 700;
-      font-size: 15px;
-      color: $default-color;
-    }
-
-    .fa {
-      font-size: 18px;
-      opacity: .3;
-      padding-top: 2px;
-      padding-left: 20px;
-    }
-
-    .content {
-      color: $content-color;
-      padding-right: 40px;
-    }
-
-    @mixin box-type($c, $lc) {
-      background-color: $lc;
-      color: $c;
-      border-color: $c;
-
-      a {
-        color: $c;
-        text-decoration: underline;
-      }
-      code {
-        color: $c;
-      }
-      .header {
-        color: $c;
-      }
-    }
-
-    &.info { @include box-type($info-color, $info-light-color); }
-    &.warning { @include box-type($warning-color, $warning-light-color); }
-    &.error { @include box-type($error-color, $error-light-color); }
   }
+
+  .header {
+    font-weight: 700;
+    font-size: 15px;
+    color: $default-color;
+  }
+
+  .fa,
+  .fas,
+  .far,
+  .fal,
+  .fab {
+    font-size: 28px;
+    opacity: .3;
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+
+  &>svg {
+    opacity: .6;
+    margin-top: 0.36rem;
+    margin-left: 0.7rem;
+  }
+
+  .content {
+    color: $content-color;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @mixin box-type($c, $lc) {
+    background-color: $lc;
+    color: $c;
+    border-color: $c;
+
+    a {
+      color: $c;
+      text-decoration: underline;
+    }
+    code {
+      color: $c;
+    }
+    .header {
+      color: $c;
+    }
+  }
+
+  &.info { @include box-type($info-color, $info-light-color); }
+  &.warning { @include box-type($warning-color, $warning-light-color); }
+  &.error { @include box-type($error-color, $error-light-color); }
+  &.citation {
+    @include box-type($citation-color, $citation-light-color);
+
+    blockquote {
+      border-left: 0;
+    }
+  }
+}

@@ -11,6 +11,20 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
 
 ## Examples
 
+### Citation (New in version 4)
+
+~~~ markdown
+ > citation "-- Mark Twain" [ cite = "twain" ]
+ > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+ > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+ > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
+~~~
+
+> citation "-- Mark Twain" [ cite = "twain" ]
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+> ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+> Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
+
 ### Note with title
 
 ~~~ markdown
@@ -110,7 +124,7 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
 >Isn't that sweet?
 >```
 >
-> Anything you can do in Markdown, you can do here. Expect from embeds Premonition boxes ;)
+> Anything you can do in Markdown, you can do here.
 
 ### Post excerpts
 
@@ -120,3 +134,17 @@ Premonition also works within excerpts
   <h2>{{ post.title }}</h2>
   {{ post.excerpt }}
 {% endfor %}
+
+### Reference links 
+
+> info "linked"
+> This is a [reference link][example].
+
+[example]: https://www.example.com/ "dd"
+
+~~~markdown
+> info "linked"
+> This is a [reference link][example].
+
+[example]: https://www.example.com/ "dd"
+~~~
