@@ -9,6 +9,6 @@ plugins:
 
 premonition:
   types:
-    warning:
+    custom:
       meta:
-        fa-icon: fa-check-square
+        fa-icon: fa-bug

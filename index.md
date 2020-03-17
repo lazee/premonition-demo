@@ -91,7 +91,16 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
  > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
 ~~~
 
-> error "The information header"
+### Custom box
+
+~~~ markdown
+ > custom "A custom box with a Font Awesome icon"
+ > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+ > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+ > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
+~~~
+
+> custom "A custom box with a Font Awesome icon"
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
 > ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
 > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
