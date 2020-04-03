@@ -147,13 +147,13 @@ Premonition also works within excerpts
 
 ### Reference links 
 
-> info "linked"
+> info "Linked"
 > This is a [reference link][example].
 
 [example]: https://www.example.com/ "dd"
 
 ~~~markdown
-> info "linked"
+> info "Linked"
 > This is a [reference link][example].
 
 [example]: https://www.example.com/ "dd"

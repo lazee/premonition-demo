@@ -1,7 +1,7 @@
 PATH
   remote: ../premonition
   specs:
-    premonition (4.0.0.pre1)
+    premonition (4.0.0.pre3)
       jekyll (>= 3.7, < 5.0)
 
 GEM
@@ -69,7 +69,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0)
   jekyll-feed (~> 0.13.0)
-  premonition (= 4.0.0.pre1)!
+  premonition (= 4.0.0.pre3)!
 
 BUNDLED WITH
    2.1.4
