@@ -138,12 +138,33 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
 
 ### Post excerpts
 
-Premonition also works within excerpts
+Premonition also works within post excerpts. This is rendered from the
+`2020-03-02-blog-post.md` post file in the source code of this
+demo site:
 
 {% for post in site.posts %}
   <h2>{{ post.title }}</h2>
   {{ post.excerpt }}
 {% endfor %}
+
+~~~markdown
+---
+layout: post
+title:  "Welcome to Premonition!"
+excerpt_separator: <!--more-->
+---
+
+> info "The information header"
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+> ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+> Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
+
+<!--more-->
+
+## Not in excerpt
+
+Hopefully
+~~~
 
 ### Reference links 
 
@@ -157,4 +178,16 @@ Premonition also works within excerpts
 > This is a [reference link][example].
 
 [example]: https://www.example.com/ "dd"
+~~~
+
+### Render error
+
+If an unknown type is used, this error will appear:
+
+> foo "Linked"
+> Unknown type
+
+~~~markdown
+> foo "Linked"
+> Unknown type
 ~~~
