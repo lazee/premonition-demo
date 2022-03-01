@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/premonition-demo/feed.xml" rel="self" type="application/atom+xml" /><link href="/premonition-demo/" rel="alternate" type="text/html" /><updated>2022-03-01T22:56:27+00:00</updated><id>/premonition-demo/feed.xml</id><title type="html">Premonition Demo Site</title><subtitle>Demo site for Premonition</subtitle><entry><title type="html">Welcome to Premonition!</title><link href="/premonition-demo/2020/03/02/blog-post.html" rel="alternate" type="text/html" title="Welcome to Premonition!" /><published>2020-03-02T00:00:00+00:00</published><updated>2020-03-02T00:00:00+00:00</updated><id>/premonition-demo/2020/03/02/blog-post</id><content type="html" xml:base="/premonition-demo/2020/03/02/blog-post.html"><![CDATA[<div class="premonition info">
+  <i class="premonition pn-info"></i>
+  <div class="content">
+    <p class="header">The information header</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.</p>
+
+
+
+
+  </div>
+</div>
+
+<!--more-->
+
+<h2 id="not-in-excerpt">Not in excerpt</h2>
+
+<p>Hopefully</p>]]></content><author><name></name></author><summary type="html"><![CDATA[The information headerLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor. Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.]]></summary></entry></feed>
