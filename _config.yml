@@ -7,6 +7,10 @@ plugins:
   - jekyll-feed
   - premonition
 
+collections:
+  contributors:
+    output: true
+
 premonition:
   types:
     custom:

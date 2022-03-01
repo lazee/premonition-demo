@@ -91,6 +91,11 @@ Read the [documentation](https://github.com/lazee/premonition) to get started.
  > Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
 ~~~
 
+> error "The information header"
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum, ligula in
+> ultrices sodales, ante enim scelerisque diam, nec molestie lorem nulla sit amet dolor.
+> Aenean id augue ante. Duis ut mi faucibus, pellentesque sem quis, gravida nisi. Nam cursus.
+
 ### Custom box
 
 ~~~ markdown
@@ -191,3 +196,14 @@ If an unknown type is used, this error will appear:
 > foo "Linked"
 > Unknown type
 ~~~
+
+## Collection support
+
+Premonition now have support for Collections, thanks to [Bill Siever](https://github.com/bsiever).
+
+### Example of Premonition within a collection file (See source code for example):
+
+{% for contributor in site.contributors %}
+  <h2>{{ contributor.name }} - {{ contributor.position }}</h2>
+  <p>{{ contributor.content | markdownify }}</p>
+{% endfor %}
